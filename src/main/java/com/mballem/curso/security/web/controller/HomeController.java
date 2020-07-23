@@ -27,7 +27,6 @@ public class HomeController {
 		model.addAttribute("titulo", "Credenciais Inválidas");
 		model.addAttribute("texto", "Login ou Senha Incorretos, tente novamente");
 		model.addAttribute("subtexto", "Acesso permitido somente para Cadastro Ativados");
-					
 		return "login";
 	}
 	
@@ -37,8 +36,6 @@ public class HomeController {
 		model.addAttribute("status", resp.getStatus());
 		model.addAttribute("error", "Acesso Negado");
 		model.addAttribute("message", "Você não tem permissão para acessar esta Área ou Ação");
-		
-					
 		return "error";
 	}
 	
